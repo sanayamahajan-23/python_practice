@@ -1,7 +1,0 @@
-def leapyear(x):
-      if (x%400==0) or (x%100 !=0 and x%4==0):
-          print("Year",x,"is a leap year.")       
-      else:
-          print("Year",x,"is not a leap year.")    
-year=int(input("enter a year:"))
-leapyear(year)       
