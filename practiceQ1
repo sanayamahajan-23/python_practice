@@ -7,7 +7,7 @@ def numbersign(x):
           elif x<0:
               print("negative")        
           else:
-              print("invalid")    
+              print("invalid")        
 num=int(input("enter a number:"))
 numbersign(num)
        
