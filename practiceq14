@@ -1,0 +1,13 @@
+def palindromechecker(x):
+    reversed=""
+    for char in x:
+        reversed=char + reversed
+    return reversed
+def is_palindrome(x):
+    reverse_string=palindromechecker(x)
+    if(x==reverse_string):
+        print(x,"is a palindrome.")
+    else:
+        print(x,"is not a palindrome.")
+input_string=input("enter the string:")
+is_palindrome(input_string)            

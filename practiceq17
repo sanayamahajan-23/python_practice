@@ -1,0 +1,11 @@
+def removeduplicates(list1):
+    removed=[]
+    for char in list1:
+        if char not in removed:
+            removed.append(char)
+    return removed        
+
+list1=map(int,input("enter elements for list:").split())
+list1=list(list1)
+remove=removeduplicates(list1)
+print("list after removal of duplicates:",remove)

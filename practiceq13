@@ -1,0 +1,6 @@
+def areaofcircle(radius):
+    area=3.14*radius*radius
+    return area
+rad=float(input("enter the radius of a circle:"))
+areacircle=areaofcircle(rad)
+print(f"area of a circle:${areacircle:.2f}")

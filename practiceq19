@@ -1,0 +1,16 @@
+def calculate_average_grade(student_grades):
+    total_grades = sum(student_grades.values())
+    average_grade = total_grades / len(student_grades)
+    return average_grade
+
+def take_user_input():
+    student_grades = {}
+    n = int(input("Enter the number of students: "))
+    for i in range(n):
+        student_name = input(f"Enter the name of student {i+1}: ")
+        grade = float(input(f"Enter the grade of {student_name}: "))
+        student_grades[student_name] = grade
+    return student_grades
+student_grades = take_user_input()
+average_grade = calculate_average_grade(student_grades)
+print("Average grade:", average_grade)

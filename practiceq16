@@ -1,0 +1,12 @@
+def intersectlist(list1,list2):
+    intersect=[]
+    for char1 in list1:
+        if char1 in list2:
+            intersect.append(char1)
+    return intersect
+x=map(int,input("enter the elements for list 1:").split()) 
+y=map(int,input("enter the elements for list 2:").split()) 
+x=list(x)  
+y=list(y)
+z=intersectlist(x,y)
+print("intersection of list 1 and list 2 :",z)

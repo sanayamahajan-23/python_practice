@@ -1,0 +1,21 @@
+def unzip_tuples(list_of_tuples):
+    unzipped_tuples = []
+    for i in range(len(list_of_tuples[0])):
+        temp_tuple = ()
+        for j in range(len(list_of_tuples)):
+            temp_tuple += (list_of_tuples[j][i],)
+        unzipped_tuples.append(temp_tuple)
+    return unzipped_tuples
+
+def take_user_input():
+    list_of_tuples = []
+    n = int(input("Enter the number of tuples in the list: "))
+    for i in range(n):
+        tuple_elements = input(f"Enter elements for tuple {i+1} separated by space: ").split()
+        tuple_elements = tuple(map(eval, tuple_elements))  
+        list_of_tuples.append(tuple_elements)
+    return list_of_tuples
+
+user_input_list = take_user_input()
+unzipped_result = unzip_tuples(user_input_list)
+print("Unzipped tuples:", unzipped_result)

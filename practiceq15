@@ -1,0 +1,8 @@
+def factorialrecursive(num):
+    if num==1 or num==0:
+        return 1
+    else:
+        return factorialrecursive(num-1)*num
+number=int(input("enter a number to find factorial:"))    
+fact=factorialrecursive(number)
+print(f"factorial of {number} is {fact}")
