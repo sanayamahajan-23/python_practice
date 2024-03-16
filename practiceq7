@@ -1,0 +1,9 @@
+def factorial(x):
+    product=1
+    while(x!=0):
+        product=product*x
+        x=x-1
+    return product
+num=int(input("enter a number:"))    
+factans=factorial(num)
+print("Factorial of ",num,":",factans)
