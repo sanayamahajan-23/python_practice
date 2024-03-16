@@ -1,0 +1,27 @@
+def calculate_discount(purchase_amount):
+    if purchase_amount > 0:
+        if purchase_amount < 100:
+            discount = 0
+        elif purchase_amount < 250:
+            discount = 0.05 * purchase_amount
+        elif purchase_amount < 500:
+            discount = 0.1 * purchase_amount
+        elif purchase_amount < 500:
+            discount = 0.25* purchase_amount    
+        elif purchase_amount < 750:
+            discount = 0.35 * purchase_amount
+        elif purchase_amount < 1000:
+            discount = 0.5 * purchase_amount
+        else:
+            discount = 0.7 * purchase_amount
+        
+        discounted_price = purchase_amount - discount
+        return discount, discounted_price
+    else:
+        return 0, purchase_amount  
+
+
+purchase_amount = float(input("Enter the purchase amount: $"))
+discount, discounted_price = calculate_discount(purchase_amount)
+print(f"Discount: ${discount:.2f}")
+print(f"Discounted price: ${discounted_price:.2f}")

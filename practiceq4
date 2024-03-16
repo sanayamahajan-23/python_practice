@@ -1,0 +1,12 @@
+def checkvowelconso(char):
+    vowels = "aeiouAEIOU"
+
+    if char.isalpha() and len(char) == 1:
+        if char in vowels:
+            print(char,"is a vowel.")
+        else:
+            print(char," is a consonant.")
+    else:
+        print("Please enter a single alphabet character.")
+char=input("enter a character:")    
+checkvowelconso(char)   
