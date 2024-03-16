@@ -1,0 +1,5 @@
+import numpy as np
+list1=map(int,input("enter numbers from 1 to 10:").split())
+list1=list(list1)
+arr=np.array(list1)
+print("Array of numbers from 1 to 10:", arr)

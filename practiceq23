@@ -1,0 +1,8 @@
+import numpy as np
+list1=map(int,input("enter numbers for array 1:").split())
+list1=list(list1)
+arr1=np.array(list1)
+mean1=np.mean(arr1)
+median1=np.median(arr1)
+standard_deviation=np.std(arr1)
+print(f"mean,median and standard deviation of array given:{mean1:.2f},{median1:.2f},{standard_deviation:.2f}")

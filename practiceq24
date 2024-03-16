@@ -1,0 +1,8 @@
+import numpy as np
+list1=map(int,input("enter numbers for array 1:").split())
+list1=list(list1)
+arr1=np.array(list1)
+new_array=np.reshape(arr1,(3,3))
+determinant=np.linalg.det(new_array)
+print("reshaped array:",new_array)
+print(f"determinant of array given:{determinant:.2f}")

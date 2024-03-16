@@ -1,0 +1,9 @@
+import numpy as np
+list1=map(int,input("enter numbers for array 1:").split())
+list2=map(int,input("enter numbers for array 1:").split())
+list2=list(list2)
+list1=list(list1)
+arr1=np.array(list1)
+arr2=np.array(list2)
+arr3=np.concatenate((arr1,arr2),axis=0)
+print("concatenated array:",arr3)
